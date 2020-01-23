@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480433547281",
+    "firebase_url": "https://yanitow-9534a.firebaseio.com",
+    "project_id": "yanitow-9534a",
+    "storage_bucket": "yanitow-9534a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480433547281:android:6cc273d86b91d89acca9b0",
+        "android_client_info": {
+          "package_name": "com.example.yanitow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480433547281-volg8nrf7it0lml41ombd3sfshu1n50n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yanitow",
+            "certificate_hash": "8cc48751b182561fa031b2813ac2970c948397f1"
+          }
+        },
+        {
+          "client_id": "480433547281-1johenkjq4d70ap3qepi12on0sha85as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7RlniXWmvmFbyVpcjbvfOIs1ifXNQJ9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480433547281-1johenkjq4d70ap3qepi12on0sha85as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
