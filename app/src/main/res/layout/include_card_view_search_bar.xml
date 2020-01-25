@@ -27,6 +27,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:contentDescription="@string/common_google_play_services_install_button"
                 android:id="@+id/bt_menu"
                 android:layout_width="?attr/actionBarSize"
                 android:layout_height="?attr/actionBarSize"
@@ -34,17 +35,16 @@
                 android:tint="@color/grey_60"
                 android:src="@drawable/ic_menu_black_24dp" />
 
-            <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/search_text"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:focusable="false"
+                android:focusable="true"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:hint="Search"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:textColor="@color/grey_40" />
-
 
             <ImageButton
                 android:layout_width="?attr/actionBarSize"
