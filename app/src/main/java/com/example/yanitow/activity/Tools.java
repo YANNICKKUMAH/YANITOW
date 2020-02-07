@@ -1,4 +1,4 @@
-package com.example.yanitow;
+package com.example.yanitow.activity;
 
 import com.google.android.gms.maps.GoogleMap;
 

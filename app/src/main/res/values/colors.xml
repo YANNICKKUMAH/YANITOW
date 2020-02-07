@@ -9,7 +9,7 @@
     <color name="ripple_effect">#f816a463</color>
     <color name="btn_signin">#1fbad6</color>
     <color name="Register_btn">#83838c</color>
-    <color name="colorWhite">#fff</color>
+    <color name="colorWhite">#00FFFFFF</color>
 <!--    <color name="colorPrimary">#1976D2</color>-->
 <!--    <color name="colorPrimaryDark">#1565C0</color>-->
     <color name="colorPrimaryLight">#1E88E5</color>

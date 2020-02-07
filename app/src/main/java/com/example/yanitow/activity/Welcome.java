@@ -1,32 +1,23 @@
-package com.example.yanitow;
+package com.example.yanitow.activity;
 
 
-import com.example.yanitow.Tools;
+import com.example.yanitow.R;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 
-import android.Manifest;
-import android.app.Dialog;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -39,15 +30,17 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 
 
 public class Welcome extends AppCompatActivity {
+
+    FloatingActionButton bt_menu;
     private GoogleMap mMap;
     private BottomSheetBehavior bottomSheetBehavior;
     LocationManager locationManager;
-
+    private AppBarConfiguration mAppBarConfiguration;
     LocationListener locationListener;
 //    ImageButton menu =  findViewById(R.id.bt_menu);
 
@@ -56,14 +49,46 @@ public class Welcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+
         initMapFragment();
         initComponent();
-//        menu.setOnClickListener(new View.OnClickListener() {
+//        ImageButton menu_button = findViewById(R.id.bt_menu);
+//        menu_button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Log.i(" ", "menu clicked");
+//////                put an action here
+////                Toast.makeText(Welcome.this, "PUT YOUR OWN ACTION HERE", Toast.LENGTH_SHORT).show();
+//
 //            }
 //        });
+        bt_menu = (FloatingActionButton) findViewById(R.id.bt_menu);
+
+        bt_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigation_drawer();
+
+            }
+        });
+
+
+    }
+
+    public void navigation_drawer(){
+
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavigationView navView = findViewById(R.id.nav_view);
+        NavigationUI.setupWithNavController(navView, navController);
+        DrawerLayout drawerLayout;
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        AppBarConfiguration appBarConfiguration =
+                new AppBarConfiguration.Builder(navController.getGraph())
+                        .setDrawerLayout(drawerLayout)
+                        .build();
+
+
 
 
     }
