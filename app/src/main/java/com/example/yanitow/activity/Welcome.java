@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 
 import com.google.android.gms.maps.CameraUpdate;
@@ -66,7 +67,7 @@ public class Welcome extends AppCompatActivity {
         bt_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigation_drawer();
+                Toast.makeText(Welcome.this, "menu button clicked", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -74,24 +75,24 @@ public class Welcome extends AppCompatActivity {
 
     }
 
-    public void navigation_drawer(){
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationView navView = findViewById(R.id.nav_view);
-        NavigationUI.setupWithNavController(navView, navController);
-        DrawerLayout drawerLayout;
-
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        AppBarConfiguration appBarConfiguration =
-                new AppBarConfiguration.Builder(navController.getGraph())
-                        .setDrawerLayout(drawerLayout)
-                        .build();
-
-
-
-
-    }
+//    public void navigation_drawer(){
+//
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+////        NavigationView navView = findViewById(R.id.nav_view);
+////        NavigationUI.setupWithNavController(navView, navController);
+//        DrawerLayout drawerLayout;
+//
+//        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//
+//        AppBarConfiguration appBarConfiguration =
+//                new AppBarConfiguration.Builder(navController.getGraph())
+//                        .setDrawerLayout(drawerLayout)
+//                        .build();
+//
+//
+//
+//
+//    }
 
 
     private void initComponent() {
@@ -124,6 +125,7 @@ public class Welcome extends AppCompatActivity {
                 try {
                     mMap.animateCamera(zoomingLocation());
                 } catch (Exception e) {
+                    Toast.makeText(Welcome.this, "hello", Toast.LENGTH_SHORT).show();
                 }
             }
         });
