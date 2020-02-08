@@ -26,10 +26,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            app:maxImageSize="35dp"
             android:layout_marginTop="15dp"
             android:contentDescription="@string/common_google_play_services_install_button"
             android:src="@drawable/ic_menu_black_24dp"
-            app:backgroundTint="#00FFFFFF" />
+            app:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
 
     </LinearLayout>
 

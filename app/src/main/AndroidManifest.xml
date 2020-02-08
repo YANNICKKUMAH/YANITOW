@@ -33,14 +33,22 @@
 
         <activity
             android:name=".activity.Welcome"
-            android:label="@string/title_activity_welcome" />
-        <activity android:name=".activity.MainActivity">
+            android:label="@string/title_activity_welcome">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+
     </application>
 
 </manifest>
