@@ -1,43 +1,13 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="bottom_sheet_item">
-        <item name="android:textSize">@dimen/text_size</item>
-        <item name="android:drawablePadding">@dimen/drawable_padding</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">@dimen/normal_padding</item>
-    </style>
 
-
-
-
-    <!-- Base application theme. -->
-
-    <!--style for ripple library-->
-    <!--    <style name="RippleStyleWhite">-->
-    <!--        <item name="mrl_rippleOverlay">true</item>-->
-    <!--        <item name="mrl_rippleColor">#80FFFFFF</item>-->
-    <!--        <item name="mrl_rippleHover">true</item>-->
-    <!--        <item name="mrl_rippleAlpha">0.2</item>-->
-    <!--    </style>-->
-
-    <!--    <style name="RippleStyleBlack" parent="RippleStyleWhite">-->
-    <!--        <item name="mrl_rippleColor">#8096989A</item>-->
-    <!--    </style>-->
-
-    <style name="Button.Primary" parent="@style/Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@color/colorPrimary</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>
 
     <style name="Yellow.Small.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Small">
         <item name="colorControlNormal">@color/grey_60</item>
@@ -49,9 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>
